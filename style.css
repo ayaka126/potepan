@@ -13,6 +13,7 @@ body {
     background-position: center;
     padding-top: 0;
     background-repeat: no-repeat;
+
     }
 
 
@@ -111,9 +112,17 @@ a{
 
 /* 最短5ヶ月で〜　*/
 .main-about-potepancamp{
-
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-bottom: 28px;
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.first-view-content{
+    padding-bottom:70px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .main-about-potepancamp h2{
@@ -124,7 +133,9 @@ a{
     font-weight: bold;
     line-height: 54px;
     text-align: center;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
+    white-space: nowrap;
+    width: fit-content;
 }
 
 /* 真ん中の画像３つ*/
@@ -135,7 +146,7 @@ a{
     gap: 10px;
     margin:0 8px 0 0;
     vertical-align: middle;
-    margin-right: 550px;
+    width: fit-content;
 }
 
 /* 注意書き３行　*/
@@ -146,8 +157,8 @@ a{
     text-align: left;
     word-break: break-all;
     font-weight: normal;
-    margin-top:30px;
-    margin-left:120px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom:0px;
 }
 
@@ -155,7 +166,9 @@ a{
     display:flex;
     justify-content: center;
     margin-top: 30px;
-    margin-right: 550px;
+    margin-right: auto;
+    width: fit-content;
+    text-align: left;
 }
 
 /* 無料カウンセリングはこちら*/
@@ -176,6 +189,7 @@ a{
     font-size: 16px;
     height: 64px;
     margin-right: 16px;
+    white-space: nowrap;
 }
 
 .counceling-button:hover{
@@ -199,6 +213,7 @@ a{
     width: 200px;
     font-size: 16px;
     height: 64px;
+    white-space: nowrap;
 }
 
 .here:hover{
@@ -270,13 +285,9 @@ a{
 /*タブレット用*/
 @media screen and (max-width: 1080px){
     main{
-        width: 100%;
-    }
-    
-    .first-page{
-        width: 100%;
         background-size: cover;
     }
+
     .header{
         position: fixed!important;
         width: 100%;
@@ -311,16 +322,15 @@ a{
 
     .main-about-potepancamp{
         text-align: center;
-        width: 100%;
-        padding: 0 50px;
+        padding: 100px 50px 0 50px;
         margin-top:60px;
-        width: fit-content;
+        background-size: cover;
         position: relative;
     }
     .main-about-potepancamp h2{
-            font-size: 38px;
-            line-height: 54px;
-            white-space: nowrap;
+        font-size: 38px;
+        line-height: 54px;
+        white-space: nowrap;
         }
 
     .images{
@@ -329,15 +339,17 @@ a{
     }
     .note{
         line-height: 1.5;
+        padding-bottom: 28px;
     }
-
 
     .counceling-button{
         white-space: nowrap;
+        align-items: center;
     }
 
     .here{
         white-space: nowrap;
+        align-items: center;
     }
     .about{
         display: flex;
@@ -345,17 +357,20 @@ a{
         max-width: none;
         padding:0 50px;
         width: 75%;
-
     }
 
     .about-video{
         width: 75%;
-        margin: 16px 0;
+        margin-top: 44px;
+        margin-bottom: 16px;
     }
+
     .about-title{
         width: 75%;
-        margin: 5px;
+        margin-left: 0;
+        text-align: left;
     }
+
     .about-potepan{
         margin-top: 20px;
     }
@@ -371,7 +386,6 @@ a{
         background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp);
         background-size: cover;
         display: block;
-        width: 100%;
         margin-top: 50px;
         background-repeat: no-repeat;
     }
@@ -382,7 +396,7 @@ a{
     }
     .here
         {display: none;
-        }
+    }
 
     .burger{
         width: 50px;
@@ -405,21 +419,20 @@ a{
     }
 
     .main-about-potepancamp{
-        box-sizing: border-box;
+        text-align: center;
         margin: 0;
-        width: 100%;
     }
     .main-about-potepancamp h2{
         font-size: 25px;
         line-height: 36px;
         text-align: center;
         align-items: center;
-        margin: 0;
+        margin: auto;
     }
 
     .images{
         text-align: center;
-        width:100%;
+        width: 100%;
     }
 
     .images.img{
